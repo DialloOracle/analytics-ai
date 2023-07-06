@@ -1,49 +1,41 @@
-# Introduction
+# Introduction & Overview
 
-## About Oracle Database 19c
+## About this Workshop
+This workshop will help you understand Data Mesh and its technical attributes by exploring an industry-specific use case. You will be introduced to Data Fabric, Data Mesh, and GoldenGate Event Integration through a financial services use case and its associated architecture. A successful Data Mesh can fulfill use cases for Operational as well as Analytic Data domains. This ability is key to reducing friction across data domains, which inherently span Operations and Analytics.
 
-Oracle Database 19c provides the most advanced SQL engine on the planet. It complies with the latest ISO SQL standard, making it not only the most comprehensive database but also the most open one. It supports highly sophisticated analytics alongside and with no impact on OLTP workloads, eliminating the need to develop and orchestrate complex, fragile, and inconsistent data movement between different specialized data stores. Oracle’s SQL engine ships with integrated machine learning algorithms and allows developers to easily apply them on the data directly, hence moving the computation to the data—rather than having to pull the data out of the database and perform the calculation within the application. Using this capability, developers can create real-time prediction models directly on the data itself and act on insights more quickly and easily than ever before.
+A New Concept for Data – Oracle’s Approach:
+1.	Emphasizes cultural change, as a mindset shift towards thinking of data ‘as a product’ – which in turn can prompt organizational and process changes to manage data as a tangible, real capital asset of the business.
+2.	Calls for alignment across operational and analytic data domains. A Data Mesh aims to link data producers directly to data consumers and remove the IT middleman from the processes that ingest, prepare and transform data resources.
+3.	Technology platform built for ‘data in motion’ is a key indicator of success – a two-sided platform that links enterprise data producers and consumers. Data Mesh core is a distributed architecture for on-prem and multi-cloud data.
 
-[](youtube:LcsPSJrZDrI)
+A trusted Data Mesh is a data architecture approach focused on business outcomes, faster innovation cycles and trusted data-in-motion for both operational apps & analytics. A Data Mesh is implemented with the following key attributes: data product thinking, a decentralized data architecture, event-driven data ledgers, and polyglot streaming.
 
-Oracle Database 19c supports fully consistent data with ACID transaction guarantees and consistent queries. This greatly simplifies application development compared to NoSQL stores. Native JSON support makes up a cornerstone for flexible schema support and Internet of Things (IoT)workloads, enabling developers to simply load JSON documents into the database natively and analyze them later on, with the full power of Oracle SQL. Oracle’s PL/SQL engine is yet another powerful tool for bringing computations to the data and providing an easy and standardized interface to them by using simple SQL function or procedure calls. Interfaces such as REST allow for easy communication and integration with Oracle Database. These can be created automatically on top of tables, as well as stored procedures, giving developers the flexibility on how and what data to expose to consuming services.
+Data Mesh Four Key Attributes
 
-Extend this with the move to autonomy provided by Oracle Autonomous Database, a self-driving, self-securing, and self-repairing approach where the database itself decides on the steps to perform for the best of the user's workload or data. Machine learning algorithms are used to help the database to decide how to tune a workload, how to secure the data, and how to take countermeasures to preserve the agreed-on SLA levels.
+![](images/data-mesh-properties.png)
 
-With the Oracle Autonomous Database, developers can fully concentrate on the applications they write and the business’s requirements, rather than having to think about the data tier. And to make this even easier the Oracle Autonomous Database environment can be provisioned in minutes with a few simple clicks or an API call to the Oracle Cloud.
+1.	Data Product Thinking
+A mandatory attribute of Data Mesh concept is a commitment to treat data as a product.
+Data products may be a part of any kind of data architecture but thinking of data as a product is a crucial part of all Data Mesh architecture since it puts the data consumers at the heart of the design.
 
-## About the Oracle Database 19c New Features Workshop
+2.	Decentralized Data Architecture
+Today, the decentralized architecture is in fashion as a software design for applications and as a data architecture for the enterprise. 
+Data is increasingly distributed across the networks: at the edge, multi-cloud, on-premises, cloud@customer, etc. Modern designs must account for this reality - treat it as a feature, not a bug.
 
-This workshop lets you try out new features in Oracle Database 19c. All the labs are independent of each other, so you don't need to do them in any particular order. If needed, a lab starts with instructions on how to prepare your environment, and ends with instructions on how to restore your environment back to its original state. For most lab steps, you enter a command in the terminal window. For database actions, you use SQL*Plus.
+3.	Event-Driven Data Ledgers
+Ledgers are the fundamental component of making a distributed data architecture function. Just as with an accounting ledger, a data ledger records the Tx events as they happen. 
+A Data Mesh is not just one single kind of ledger, it can make use of different types of event-driven data ledgers, depending on the use cases and requirements.
 
-> **Note**: Currently, this workshop is not supported in an Always Free environment. If you are using the LiveLabs environment (green button), please note that the **Install Oracle Database 19c with Automatic Root Script Execution** lab is not available.
+4.	Polyglot Data Streaming
+A mandatory attribute of Data Mesh concept is a commitment to treat data as a product.
+Data products themselves may be a part of other data architectures, but data products are a crucial part of the inception of all Data Mesh designs.
 
-### General Database Overall Enhancement Labs
 
-The following general database overall enhancement labs are available:
+App Modernization Use Case Summary & Architecture – Healthcare
+In this lab, you will explore a medical records use case. Specifically, you will add functionality to an existing medical records application through the use of microservices powered by Helidon. This microservice will be responsible for viewing data products filtered through GGSA.
 
-- Install Oracle Database 19c with Automatic Root Script Execution
-- Clone a PDB from a Remote CDB by Using DBCA in Silent Mode
-- Relocate a PDB to a Remote CDB by Using DBCA in Silent Mode
-- Duplicate a CDB by Using DBCA in Silent Mode
-- Decrease the Transportable Tablespace (TTS) Import and Export Time
-- Omit the Column Encryption Attribute During Import
-- Use RMAN to Connect to a PDB to Use the Recovery Catalog
-- Explore Automatic Deletion of Flashback Logs
+![](images/data-mesh-app-dev.png)
 
-If you would like to watch us do the general enhancement labs, click [here](https://youtu.be/Kdw7uugt0-E).
+ 
+In the architecture above, credit card transactions are captured as Data Ledgers using GoldenGate Capture. The data is enriched with customer information and geo-locations. Finally, a machine learning model is applied to detect risky transactions and identify good credit patterns.
 
-### Security Enhancement Labs
-
-The following security enhancement labs are available:
-
-- Explore Oracle-Supplied Schema-Only Accounts
-- Protect Application Data by Using Database Vault Operations Control
-- Restrict Users from Executing the AUDIT POLICY and NOAUDIT POLICY SQL Commands by Using Oracle Database Vault Command Rules
-- Audit Direct User Activities
-- Handle Operations on Oracle-Managed and User-Managed Tablespaces Encrypted in TDE
-
-## Acknowledgements
-
-- **Author**- Jody Glover, Principal User Assistance Developer, Database Development
-- **Last Updated By/Date** - Matthew McDaniel, Austin Specialist Hub, February 24 2022

@@ -1,49 +1,55 @@
-# Introduction
+# Set up Event Sourcing pipeline
 
-## About Oracle Database 19c
+## Introduction
 
-Oracle Database 19c provides the most advanced SQL engine on the planet. It complies with the latest ISO SQL standard, making it not only the most comprehensive database but also the most open one. It supports highly sophisticated analytics alongside and with no impact on OLTP workloads, eliminating the need to develop and orchestrate complex, fragile, and inconsistent data movement between different specialized data stores. Oracle’s SQL engine ships with integrated machine learning algorithms and allows developers to easily apply them on the data directly, hence moving the computation to the data—rather than having to pull the data out of the database and perform the calculation within the application. Using this capability, developers can create real-time prediction models directly on the data itself and act on insights more quickly and easily than ever before.
+This hands-on lab is designed to demonstrate how Oracle GoldenGate 19c Microservices can be used to setup a replication environment by a mix of web page, shell scripts and Rest API interfaces.  
 
-[](youtube:LcsPSJrZDrI)
+The labs will walk the end-user through how to add components of Oracle GoldenGate replication.
 
-Oracle Database 19c supports fully consistent data with ACID transaction guarantees and consistent queries. This greatly simplifies application development compared to NoSQL stores. Native JSON support makes up a cornerstone for flexible schema support and Internet of Things (IoT)workloads, enabling developers to simply load JSON documents into the database natively and analyze them later on, with the full power of Oracle SQL. Oracle’s PL/SQL engine is yet another powerful tool for bringing computations to the data and providing an easy and standardized interface to them by using simple SQL function or procedure calls. Interfaces such as REST allow for easy communication and integration with Oracle Database. These can be created automatically on top of tables, as well as stored procedures, giving developers the flexibility on how and what data to expose to consuming services.
+*Estimated Lab Time*: 30 mins
 
-Extend this with the move to autonomy provided by Oracle Autonomous Database, a self-driving, self-securing, and self-repairing approach where the database itself decides on the steps to perform for the best of the user's workload or data. Machine learning algorithms are used to help the database to decide how to tune a workload, how to secure the data, and how to take countermeasures to preserve the agreed-on SLA levels.
+### About Oracle GoldenGate Microservices
+Oracle GoldenGate offers high-performance, fault-tolerant, easy-to-use, and flexible real- time data streaming platform for big data environments. It easily extends customers’ real-time data integration architectures to big data systems without impacting the performance of the source systems and enables timely business insight for better decision making. This workshop focuses on **GoldenGate Real Time Data Capture** demonstrating four scenarios that you can use (both on-premise and in the cloud) to capture real time data changes from your sources.
 
-With the Oracle Autonomous Database, developers can fully concentrate on the applications they write and the business’s requirements, rather than having to think about the data tier. And to make this even easier the Oracle Autonomous Database environment can be provisioned in minutes with a few simple clicks or an API call to the Oracle Cloud.
+### Lab architecture
 
-## About the Oracle Database 19c New Features Workshop
+![](images/event-sourcing-architecture.png))
 
-This workshop lets you try out new features in Oracle Database 19c. All the labs are independent of each other, so you don't need to do them in any particular order. If needed, a lab starts with instructions on how to prepare your environment, and ends with instructions on how to restore your environment back to its original state. For most lab steps, you enter a command in the terminal window. For database actions, you use SQL*Plus.
+## What is Event Sourcing?
 
-> **Note**: Currently, this workshop is not supported in an Always Free environment. If you are using the LiveLabs environment (green button), please note that the **Install Oracle Database 19c with Automatic Root Script Execution** lab is not available.
+Event Sourcing is an architectural pattern that emphasizes storing changes to domain objects. In effect, this means we can maintain an event log where we can query the changes a domain object has undergone. In our use case, the events that we will be tracking are credit card transactions. Once a transaction is made, it will be picked up by a Kafka Topic and placed within an event log. Following this, the event will be sent through a Golden Gate Stream Analytics pipeline where it will undergo a transformation via filtering and analysis. During this process, we will run the event through a machine learning via Oracle Machine Learning, which will determine whether or not the transaction is fraudulent. 
 
-### General Database Overall Enhancement Labs
+## What is CQRS
 
-The following general database overall enhancement labs are available:
+Simply put, CQRS (Command Query Responsibility Segregation) is a software architecture pattern that seperates reads and writes into two separate models. An example of this could be two separate data sources, one which is a read-only database, and the only a write database. Synchronization between these two data stores can be accomplished through an event log (Kafka, for instance). The benefit of this is that, in conjunction with the event sourcing pattern, we can recreate our data stores fairly easily by utlizing the event log, which is updated on a transaction-by-transaction basis. 
 
-- Install Oracle Database 19c with Automatic Root Script Execution
-- Clone a PDB from a Remote CDB by Using DBCA in Silent Mode
-- Relocate a PDB to a Remote CDB by Using DBCA in Silent Mode
-- Duplicate a CDB by Using DBCA in Silent Mode
-- Decrease the Transportable Tablespace (TTS) Import and Export Time
-- Omit the Column Encryption Attribute During Import
-- Use RMAN to Connect to a PDB to Use the Recovery Catalog
-- Explore Automatic Deletion of Flashback Logs
+## Create Event Log pipeline
 
-If you would like to watch us do the general enhancement labs, click [here](https://youtu.be/Kdw7uugt0-E).
+For the purpose of this workshop, all data sources, streams, and targets have been preconfigured for your convenience. Your job will be to configure the pipeline and create the transformations that the events will undergo.
 
-### Security Enhancement Labs
+1. To start, access the Golden Gate Stream Analytics console in the Firefox web browser, then click **Catalog**.
 
-The following security enhancement labs are available:
+    ![](images/access-ggsa.png)
 
-- Explore Oracle-Supplied Schema-Only Accounts
-- Protect Application Data by Using Database Vault Operations Control
-- Restrict Users from Executing the AUDIT POLICY and NOAUDIT POLICY SQL Commands by Using Oracle Database Vault Command Rules
-- Audit Direct User Activities
-- Handle Operations on Oracle-Managed and User-Managed Tablespaces Encrypted in TDE
+2. Once in the catalog, you will see numerous resources, ranging from streams, targets. In the top-right, click on **Create New Item**. Once the dropdown appears, click **Pipeline**.
+
+3. When the following screen appears, Populate the fields with the following values:
+
+    - **Name**: createEventLog
+    - **Display Name**: createEventLog
+    - **Description**: *optional*
+    - **Tags**: *optional*
+    - **Stream**: EventLogStream
+
+    ![](images/create-pipeline.png)
+
+4. Click **Save*.
+
+5. You should now be within the **createEventLog** pipeline and should see the following view.
+
+    ![](images/pipeline-view.png)
 
 ## Acknowledgements
 
-- **Author**- Jody Glover, Principal User Assistance Developer, Database Development
+- **Author**- Matthew McDaniel, Platform Specialists, September 16, 2022
 - **Last Updated By/Date** - Matthew McDaniel, Austin Specialist Hub, February 24 2022
