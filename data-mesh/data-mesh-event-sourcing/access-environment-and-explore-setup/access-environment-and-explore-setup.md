@@ -1,6 +1,6 @@
-# Introduction
+# Access environment and explore setup 
 
-## Access environment and explore setup
+## Introduction
 
 In this lab, you will explore the Data Mesh environment, discovering key components such as GoldenGate, Oracle Database, and Helidon.
 
@@ -81,5 +81,5 @@ In this lab, you will:
 
 ## Acknowledgements
 
-- **Author**- Matthew McDaniel, Cloud Engineer, January 12, 2023
-- **Last Updated By/Date** - Matthew McDaniel, Platform Specialists, August 25, 2022
+- **Author**- Matthew McDaniel, North America Specialist Hub
+- **Last Updated By/Date** - Alpha Diallo, Nicholas Cusato, July 2023

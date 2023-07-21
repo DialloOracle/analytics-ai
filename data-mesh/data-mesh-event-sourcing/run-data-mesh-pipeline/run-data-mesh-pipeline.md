@@ -1,4 +1,4 @@
-# Introduction & Overview
+# Run Data Mesh Pipeline
 
 This lab will walk you through how to run the data mesh pipeline.
 
@@ -17,7 +17,7 @@ For this lab, you must have have access to:
 - Access to GoldenGate Stream Analytics via a web browser
 
 
-## Task 1: Start data feed
+## Task 1: Run the transaction feed script
 
 1. In the terminal, start the data feed with the following command.
 
@@ -35,7 +35,7 @@ For this lab, you must have have access to:
 
     The microservice will now be running on port 8080.
 
-## Task 2: Observe event population in Golden Gate Stream Analytics
+## Task 2: View the transactions as they are picked up by Golden Gate.
 
 1. Go to the Golden Gate Streaming Analytics console in Firefoz.
 
@@ -59,7 +59,7 @@ For this lab, you must have have access to:
 
 11. Go through each individual stage in the pipeline. 
 
-## Task 3: Query data products using Helidon microservice
+## Task 3: Fetch data products via Helidon microservice
 
 1. In the firefox web browser, Open a new tab.
 
@@ -69,5 +69,12 @@ For this lab, you must have have access to:
     $ http://eventshelidon:8080/creditfraud
     ```
 
+## Task 4: View analytical views via OAS
 
+
+
+## Acknowledgements
+
+- **Author**- Matthew McDaniel, North America Specialist Hub
+- **Last Updated By/Date** - Alpha Diallo, Nicholas Cusato, July 2023
 

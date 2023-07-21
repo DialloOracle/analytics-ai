@@ -3,9 +3,14 @@
     "help": "livelabs-help-analytics_us@oracle.com",
     "tutorials": [
         {
-            "title": "What is data mesh?",
+            "title": "Introduction",
             "description": "Description of Data Mesh.",
-            "filename": "./../../what-is-data-mesh/what-is-data-mesh.md"
+            "filename": "./../../introduction/introduction.md"
+        },
+        {
+            "title": "What is event sourcing?",
+            "description": "Description of Event Sourcing.",
+            "filename": "./../../what-is-event-sourcing/what-is-event-sourcing.md"
         },
         {
             "title": "Access environment and explore setup",
