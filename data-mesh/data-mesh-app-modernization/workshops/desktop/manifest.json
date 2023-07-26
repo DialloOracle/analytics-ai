@@ -3,9 +3,9 @@
     "help": "livelabs-help-analytics_us@oracle.com",
     "tutorials": [
         {
-            "title": "What is data mesh?",
+            "title": "introduction",
             "description": "Description of Data Mesh.",
-            "filename": "./../../what-is-data-mesh/what-is-data-mesh.md"
+            "filename": "./../../introduction/introduction.md"
         },
         {
             "title": "What is app modernization?",
