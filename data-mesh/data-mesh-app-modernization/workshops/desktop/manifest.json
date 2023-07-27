@@ -1,10 +1,10 @@
 {
-    "workshoptitle": "Data Mesh - Event Sourcing",
+    "workshoptitle": "Data Mesh - App Modernization",
     "help": "livelabs-help-analytics_us@oracle.com",
     "tutorials": [
         {
             "title": "introduction",
-            "description": "Description of Data Mesh.",
+            "description": "Description of Data Mesh",
             "filename": "./../../introduction/introduction.md"
         },
         {

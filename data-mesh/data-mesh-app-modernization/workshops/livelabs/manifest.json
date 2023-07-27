@@ -1,11 +1,11 @@
 {
-    "workshoptitle": "Data Mesh - Event Sourcing",
+    "workshoptitle": "Data Mesh - App Modernization",
     "help": "livelabs-help-analytics_us@oracle.com",
     "tutorials": [
         {
-            "title": "What is data mesh?",
-            "description": "Description of Data Mesh.",
-            "filename": "./../../what-is-data-mesh/what-is-data-mesh.md"
+            "title": "introduction",
+            "description": "Description of Data Mesh",
+            "filename": "./../../introduction/introduction.md"
         },
         {
             "title": "What is app modernization?",
