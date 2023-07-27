@@ -1,31 +1,26 @@
 {
-    "workshoptitle": "Data Mesh - Event Sourcing",
+    "workshoptitle": "Data Mesh - Integration",
     "help": "livelabs-help-analytics_us@oracle.com",
     "tutorials": [
         {
             "title": "Introduction",
             "description": "Description of Data Mesh.",
-            "filename": "./../../introduction/introduction.md"
+            "filename": "./../../what-is-data-mesh/what-is-data-mesh.md"
         },
         {
-            "title": "What is event sourcing?",
-            "description": "Description of Event Sourcing.",
-            "filename": "./../../what-is-event-sourcing/what-is-event-sourcing.md"
+            "title": "GGMA",
+            "description": "Lab for GGMA",
+            "filename": "./../../ggma/ggma.md"
         },
         {
-            "title": "Access environment and explore setup",
-            "description": "Explore the environment.",
-            "filename": "./../../access-environment-and-explore-setup/access-environment-and-explore-setup.md"
+            "title": "OAS",
+            "description": "Lab for OAS",
+            "filename": "./../../oas/oas.md"
           },
         {
-            "title": "Set up event sourcing pipeline",
-            "description": "Steps to initialize the workshop-installed compute instance and download the lab files.",
-            "filename": "./../../set-up-event-sourcing-pipeline/set-up-event-sourcing-pipeline.md"
-        },
-        {
-            "title": "Run data mesh pipeline",
-            "description": "Clone a PDB by using DBCA in silent mode.",
-            "filename": "./../../run-data-mesh-pipeline/run-data-mesh-pipeline.md"
+            "title": "GGSA-Truck-Stream",
+            "description": "Lab for GGSA Truck Stream",
+            "filename": "./../../ggsa-truck-stream/ggsa-truck-stream.md"
         },
         {
         "title": "Need Help?",
