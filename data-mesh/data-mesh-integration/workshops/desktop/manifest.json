@@ -8,9 +8,9 @@
             "filename": "../../introduction/introduction.md"
         },
         {
-            "title": "What is App Integration",
-            "description": "Description of App Integration.",
-            "filename": "../../what-is-app-integration/what-is-app-integration.md"
+            "title": "What is Integration",
+            "description": "Description of Integration.",
+            "filename": "../../what-is-integration/what-is-integration.md"
         },
         {
             "title": "Stream Data",
@@ -32,5 +32,7 @@
         "description": "Solutions to Common Problems and Directions for Receiving Live Help",
         "filename":"https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/need-help/need-help-livelabs.md"
         }
-    ]
+    ],
+    "task_type": "Sections",
+    "hide_button": "true"
 }

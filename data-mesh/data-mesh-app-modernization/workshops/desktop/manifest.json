@@ -11,7 +11,7 @@
             "title": "What is app modernization?",
             "description": "Explore app modernization.",
             "filename": "../../what-is-app-modernization/what-is-app-modernization.md"
-          },
+        },
         {
             "title": "Access environment and explore setup",
             "description": "Access environment and explore setup.",
@@ -27,5 +27,7 @@
         "description": "Solutions to Common Problems and Directions for Receiving Live Help",
         "filename":"https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/need-help/need-help-livelabs.md"
         }
-    ]
+    ],
+    "task_type": "Sections",
+    "hide_button": "true"
 }
