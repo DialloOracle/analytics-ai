@@ -17,15 +17,15 @@
             "description": "Access environment and explore setup.",
             "filename": "../../access-environment-and-explore-setup/access-environment-and-explore-setup.md"
         },
-            {
-                "title": "Run data mesh pipeline",
-                "description": "Run data mesh pipeline.",
-                "filename": "../../run-data-mesh-pipeline/run-data-mesh-pipeline.md"
-            },
-            {
-            "title": "Need Help?",
-            "description": "Solutions to Common Problems and Directions for Receiving Live Help",
-            "filename":"https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/need-help/need-help-livelabs.md"
-           }
+        {
+            "title": "Run data mesh pipeline",
+            "description": "Run data mesh pipeline.",
+            "filename": "../../run-data-mesh-pipeline/run-data-mesh-pipeline.md"
+        },
+        {
+        "title": "Need Help?",
+        "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+        "filename":"https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/need-help/need-help-livelabs.md"
+        }
     ]
 }

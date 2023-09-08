@@ -16,7 +16,7 @@
             "title": "Access environment and explore setup",
             "description": "Explore the environment.",
             "filename": "../../access-environment-and-explore-setup/access-environment-and-explore-setup.md"
-          },
+        },
         {
             "title": "Set up event sourcing pipeline",
             "description": "Steps to initialize the workshop-installed compute instance and download the lab files.",
@@ -26,6 +26,16 @@
             "title": "Run data mesh pipeline",
             "description": "Clone a PDB by using DBCA in silent mode.",
             "filename": "../../run-data-mesh-pipeline/run-data-mesh-pipeline.md"
+        },
+        {
+            "title": "Build Create Event Log Pipeline",
+            "description": "",
+            "filename": "../../build-create-event-log-pipeline/build-create-event-log-pipeline.md"
+        },
+        {
+            "title": "Build Eventhandler Pipeline",
+            "description": "",
+            "filename": "../../build-eventhandler-pipeline/build-eventhandler-pipeline.md"
         },
         {
         "title": "Need Help?",

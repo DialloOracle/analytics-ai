@@ -5,22 +5,27 @@
         {
             "title": "Introduction",
             "description": "Description of Data Mesh.",
-            "filename": "../../what-is-data-mesh/what-is-data-mesh.md"
+            "filename": "../../introduction/introduction.md"
         },
         {
-            "title": "GGMA",
+            "title": "What is App Integration",
+            "description": "Description of App Integration.",
+            "filename": "../../what-is-app-integration/what-is-app-integration.md"
+        },
+        {
+            "title": "Stream Data",
             "description": "Lab for GGMA",
-            "filename": "../../ggma/ggma.md"
+            "filename": "../../stream-data/stream-data.md"
         },
         {
-            "title": "OAS",
+            "title": "Analyze Data Products",
             "description": "Lab for OAS",
-            "filename": "../../oas/oas.md"
+            "filename": "../../analyze-data-products/analyze-data-products.md"
           },
         {
-            "title": "GGSA-Truck-Stream",
+            "title": "Analyze Streaming Data",
             "description": "Lab for GGSA Truck Stream",
-            "filename": "../../ggsa-truck-stream/ggsa-truck-stream.md"
+            "filename": "../../analyze-streaming-data/analyze-streaming-data.md"
         },
         {
         "title": "Need Help?",

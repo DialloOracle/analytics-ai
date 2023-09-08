@@ -1,4 +1,4 @@
-# What is Appliciation Modernization?
+# What is applciation modernization?
 
 ## Application Modernization
 
