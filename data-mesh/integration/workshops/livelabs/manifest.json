@@ -5,22 +5,22 @@
         {
             "title": "Introduction",
             "description": "Description of Data Mesh.",
-            "filename": "./../../what-is-data-mesh/what-is-data-mesh.md"
+            "filename": "../../what-is-data-mesh/what-is-data-mesh.md"
         },
         {
             "title": "GGMA",
             "description": "Lab for GGMA",
-            "filename": "./../../ggma/ggma.md"
+            "filename": "../../ggma/ggma.md"
         },
         {
             "title": "OAS",
             "description": "Lab for OAS",
-            "filename": "./../../oas/oas.md"
+            "filename": "../../oas/oas.md"
           },
         {
             "title": "GGSA-Truck-Stream",
             "description": "Lab for GGSA Truck Stream",
-            "filename": "./../../ggsa-truck-stream/ggsa-truck-stream.md"
+            "filename": "../../ggsa-truck-stream/ggsa-truck-stream.md"
         },
         {
         "title": "Need Help?",

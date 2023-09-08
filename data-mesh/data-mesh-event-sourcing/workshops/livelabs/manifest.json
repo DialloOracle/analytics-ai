@@ -5,27 +5,27 @@
         {
             "title": "Introduction",
             "description": "Description of Data Mesh.",
-            "filename": "./../../introduction/introduction.md"
+            "filename": "../../introduction/introduction.md"
         },
         {
             "title": "What is event sourcing?",
             "description": "Description of Event Sourcing.",
-            "filename": "./../../what-is-event-sourcing/what-is-event-sourcing.md"
+            "filename": "../../what-is-event-sourcing/what-is-event-sourcing.md"
         },
         {
             "title": "Access environment and explore setup",
             "description": "Explore the environment.",
-            "filename": "./../../access-environment-and-explore-setup/access-environment-and-explore-setup.md"
+            "filename": "../../access-environment-and-explore-setup/access-environment-and-explore-setup.md"
           },
         {
             "title": "Set up event sourcing pipeline",
             "description": "Steps to initialize the workshop-installed compute instance and download the lab files.",
-            "filename": "./../../set-up-event-sourcing-pipeline/set-up-event-sourcing-pipeline.md"
+            "filename": "../../set-up-event-sourcing-pipeline/set-up-event-sourcing-pipeline.md"
         },
         {
             "title": "Run data mesh pipeline",
             "description": "Clone a PDB by using DBCA in silent mode.",
-            "filename": "./../../run-data-mesh-pipeline/run-data-mesh-pipeline.md"
+            "filename": "../../run-data-mesh-pipeline/run-data-mesh-pipeline.md"
         },
         {
         "title": "Need Help?",

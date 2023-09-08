@@ -5,22 +5,22 @@
         {
             "title": "introduction",
             "description": "Description of Data Mesh",
-            "filename": "./../../introduction/introduction.md"
+            "filename": "../../introduction/introduction.md"
         },
         {
             "title": "What is app modernization?",
             "description": "Explore app modernization.",
-            "filename": "./../../what-is-app-modernization/what-is-app-modernization.md"
+            "filename": "../../what-is-app-modernization/what-is-app-modernization.md"
           },
         {
             "title": "Access environment and explore setup",
             "description": "Access environment and explore setup.",
-            "filename": "./../../access-environment-and-explore-setup/access-environment-and-explore-setup.md"
+            "filename": "../../access-environment-and-explore-setup/access-environment-and-explore-setup.md"
         },
             {
                 "title": "Run data mesh pipeline",
                 "description": "Run data mesh pipeline.",
-                "filename": "./../../run-data-mesh-pipeline/run-data-mesh-pipeline.md"
+                "filename": "../../run-data-mesh-pipeline/run-data-mesh-pipeline.md"
             },
             {
             "title": "Need Help?",
