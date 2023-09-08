@@ -2,13 +2,13 @@
 
 ## Integration
 
-Application modernization is the process of updating older applications to newer languages, frameworks, and deployment models. To be specific, app modernization includes, but is not limited to: deploying applciations to containers, deploying applications to a cloud platform, and refactoring monolithic applications to microservices. Typically, one will see a combination of these processes in their modernization efforts. The reasons for doing this will vary from organization to organization, and many of them will only adopt certain facets of modernization, but generally, some of the reasons for modernization include: scalability benefits, faster time-to-deployment, and standard infrastructure platforms. This workshop will explore some of the benefits of adopting app modernization in a Data Mesh architecture. 
+Integration is the application of moving data using microservices. Data in motion is typically event-driven. A user action, a device event, a process step or a data store commit can all initiate an event with a data payload. These data payloads are crucial for integrating IoT systems, business processes and databases, data warehouses and data lakes. Using a combination of old and new systems, monoliths and microservices, operational and analytic data stores – a Data Mesh can help to unify these resources across differing business and data domains. This workshop will explore some of the benefits of using event-driven integration to keep data in motion.
 
 ## Integration in this workshop
 
-This workshop will show you how to extend the functionality of an existing application using microservices. Specifically, we have a monolithic Jakarta EE application running on WebLogic Server, and we would like to add a new feature that is responsible for querying patients at risk of experiencing poor symptoms to COVID-19. For scalability concerns, we would like to package this functionality outside of the WebLogic Server and have it run within its own JVM. For this reason, we have chosen to go with Helidon, a lightweight set of Java libraries that enables us to develop microservices. Particulary, we have chosen to go with Helidon MP. Helidon MP implements the MicroProfile specification which implements many of the same standards as Jakarta EE, but in a way that suits microservices. This allows us to maintain consistency in our programming styles.
+This workshop will show you how events are driving integration for a supply chain scenario. Sensor data is used to track truck maintenance as deliveries are being fulfilled. In addition, weather data and geographic information are used to provide delivery estimates. GoldenGate Microservices Architecture is streaming change data capture for IoT devices, where abnormalities are used to create events. Analytics are used to determine delivery estimates.
 
 ## Acknowledgements
 
-- **Author**- Matthew McDaniel, North America Cloud and Technology Engineering
-- **Last Updated By/Date** - Matthew McDaniel, North America Cloud and Technology Engineering, July 29, 2022
+- **Author**- Brian Elliott, North America Cloud and Technology Engineering
+- **Last Updated By/Date** - Alpha Diallo, Nicholas Cusato, Stephen Stuart, North America Cloud and Technology Engineering, September, 2023
