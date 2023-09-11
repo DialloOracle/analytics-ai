@@ -21,7 +21,7 @@
             "title": "Analyze Data Products",
             "description": "Lab for OAS",
             "filename": "../../analyze-data-products/analyze-data-products.md"
-          },
+        },
         {
             "title": "Analyze Streaming Data",
             "description": "Lab for GGSA Truck Stream",

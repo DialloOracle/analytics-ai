@@ -1,6 +1,6 @@
 {
     "workshoptitle": "LiveLabs",
-    "help": "livelabs-help-db_us@oracle.com",
+    "help": "livelabs-help-analytics_us@oracle.com",
     "tutorials": [
       {
          "title": "Introduction",
@@ -41,10 +41,16 @@
          "title": "Analyze Data Products in OAS",
          "description": "",
          "filename": "../../analyze-data-products-in-oas/analyze-data-products-in-oas.md"
+      },
+      {
+         "title": "Need Help?",
+         "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+         "filename":"https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/need-help/need-help-livelabs.md"
       }
+      
 
-    ],
+   ],
     "task_type": "Sections",
     "hide_button": "true"
- }
+}
  
