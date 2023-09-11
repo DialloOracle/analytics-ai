@@ -2,7 +2,7 @@
 
 ## About this Workshop
 
-This workshop is to educate users on a Streaming Ingest Data Mesh scenario for IoT. We will examine IoT data that will be used in conjunction with live streaming data to determine if a customer is likely to be a spender, which will trigger events in a Kafka topic to encourage spending. OML models will be created to filter the data in a GGSA environment. Users will learn how to create a pipeline, joining live data and static data from the database to an OML model, Kafka, and OAS. OAS will be used to support analysis on decisions.
+This workshop is to educate users on an Integration Data Mesh scenario for IoT. We will examine IoT data that will be used in conjunction with live streaming data to determine if a delivery will be on time, which will trigger events in a Kafka topic to alert the customer. ONNX models will be used to score delivery status. Users will learn how to create a pipeline joining live data(truck information) and static data, such as historical weather data or driver/package data, to accurately analyze data stores. OAS will be used to support analysis on decisions.
 
 A New Concept for Data – Oracle’s Approach:
 1.	Emphasizes cultural change, as a mindset shift towards thinking of data ‘as a product’ – which in turn can prompt organizational and process changes to manage data as a tangible, real capital asset of the business.
@@ -27,11 +27,11 @@ Ledgers are the fundamental component of making a distributed data architecture 
 **4.	Polyglot Data Streaming**
 A mandatory attribute of Data Mesh concept is a commitment to treat data as a product. Data products themselves may be a part of other data architectures, but data products are a crucial part of the inception of all Data Mesh designs.
 
-### Streaming Ingest Use Case Summary & Architecture – IoT Data
+### Integration Use Case Summary & Architecture – IoT Data
 
-In this lab, you will explore an IoT use case using streaming ingest to process real-time IoT data streams of customers to promote events to encourage more spending. You will identify if a customer is likely to be a spender.
+In this lab, you will explore an IoT use case using integration to process events from sensor, geographic, and weather data. You will identify abnormalities and delivery estimates for a supply chain.
 
-   ![architecture of streaming ingest](./images/streaming-ingest-architecture.png " ")
+   ![architecture of streaming ingest](./images/integration-architecture.png " ")
 
 Estimated Time: 115 minutes
 
@@ -39,12 +39,10 @@ Estimated Time: 115 minutes
 
 In this workshop, you will complete the following labs:
 
-- Prepare Data for Pipeline
-- Review Microservices
-- Create OML model
-- Create pipeline
-- Data feed and validation
-- Analyze Data Products in OAS
+- Stream Data
+- Analyze Data Products
+- Analyze Streaming Data
+
 
 ### Prerequisites
 
@@ -57,6 +55,6 @@ This lab assumes you have:
 
 ## Acknowledgements
 
-- **Author**- Nicholas Cusato, Santa Monica Specialists Hub, July 14, 2022
-- **Contributers**- Hadi Javaherian, Hannah Nguyen, Gia Villanueva, Akash Dahramshi
-- **Last Updated By/Date** - Nicholas Cusato, Santa Monica Specialists Hub, July 14, 2022
+- **Author**- Brain Elliott, North American Cloud and Technology
+- **Contributers**- Alpha Diallo, Nicholas Cusato, Stephen Stuart, Mathew McDaniel
+- **Last Updated By/Date** - Alpha Diallo, Nicholas Cusato, Stephen Stuart, September 2023
