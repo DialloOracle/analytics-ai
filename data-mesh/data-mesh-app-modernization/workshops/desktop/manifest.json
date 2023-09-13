@@ -13,12 +13,12 @@
             "filename": "../../what-is-app-modernization/what-is-app-modernization.md"
         },
         {
-            "title": "Access environment and explore setup",
+            "title": "Lab 1: Access environment and explore setup",
             "description": "Access environment and explore setup.",
             "filename": "../../access-environment-and-explore-setup/access-environment-and-explore-setup.md"
         },
         {
-            "title": "Run data mesh pipeline",
+            "title": "Lab 2: Run data mesh pipeline",
             "description": "Run data mesh pipeline.",
             "filename": "../../run-data-mesh-pipeline/run-data-mesh-pipeline.md"
         },

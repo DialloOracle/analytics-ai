@@ -13,17 +13,17 @@
             "filename": "../../what-is-event-sourcing/what-is-event-sourcing.md"
         },
         {
-            "title": "Access environment and explore setup",
+            "title": "Lab 1: Access environment and explore setup",
             "description": "Explore the environment.",
             "filename": "../../access-environment-and-explore-setup/access-environment-and-explore-setup.md"
           },
         {
-            "title": "Set up event sourcing pipeline",
+            "title": "Lab 2: Set up event sourcing pipeline",
             "description": "Steps to initialize the workshop-installed compute instance and download the lab files.",
             "filename": "../../set-up-event-sourcing-pipeline/set-up-event-sourcing-pipeline.md"
         },
         {
-            "title": "Run data mesh pipeline",
+            "title": "Lab 3: Run data mesh pipeline",
             "description": "Clone a PDB by using DBCA in silent mode.",
             "filename": "../../run-data-mesh-pipeline/run-data-mesh-pipeline.md"
         },

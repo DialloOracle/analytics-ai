@@ -13,17 +13,17 @@
             "filename": "../../what-is-integration/what-is-integration.md"
         },
         {
-            "title": "Stream Data",
+            "title": "Lab 1: Stream Data",
             "description": "Lab for GGMA",
             "filename": "../../stream-data/stream-data.md"
         },
         {
-            "title": "Analyze Data Products",
+            "title": "Lab 2: Analyze Data Products",
             "description": "Lab for OAS",
             "filename": "../../analyze-data-products/analyze-data-products.md"
         },
         {
-            "title": "Analyze Streaming Data",
+            "title": "Lab 3: Analyze Streaming Data",
             "description": "Lab for GGSA Truck Stream",
             "filename": "../../analyze-streaming-data/analyze-streaming-data.md"
         },

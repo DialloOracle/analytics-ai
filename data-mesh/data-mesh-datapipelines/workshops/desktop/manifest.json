@@ -1,6 +1,6 @@
 {
     "workshoptitle": "LiveLabs",
-    "help": "livelabs-help-db_us@oracle.com",
+    "help": "livelabs-help-analytics_us@oracle.comm",
     "tutorials": [
       {
          "title": "Introduction",
@@ -13,32 +13,32 @@
          "filename": "../../what-is-datapipelines/what-is-datapipelines.md"
       },
       {
-         "title": "Data Preparation",
+         "title": "Lab 1: Data Preparation",
          "description": "",
          "filename": "../../data-preparation/data-preparation.md"
       },
       {
-         "title": "Create OML model",
+         "title": "Lab 2: Create OML model",
          "description": "",
          "filename": "../../create-oml-model/create-oml-model.md"
       },
       {
-         "title": "Review Microservices",
+         "title": "Lab 3: Review Microservices",
          "description": "",
          "filename": "../../review-microservices/review-microservices.md"
       },
       {
-         "title": "Create pipeline",
+         "title": "Lab 4: Create pipeline",
          "description": "",
          "filename": "../../create-pipeline/create-pipeline.md"
       },
       {
-         "title": "Data feed and validation",
+         "title": "Lab 5: Data feed and validation",
          "description": "",
          "filename": "../../data-feed-and-validation/data-feed-and-validation.md"
       },
       {
-         "title": "Analyze Data Products in OAS",
+         "title": "Lab 6: Analyze Data Products in OAS",
          "description": "",
          "filename": "../../analyze-data-products-in-oas/analyze-data-products-in-oas.md"
       },
