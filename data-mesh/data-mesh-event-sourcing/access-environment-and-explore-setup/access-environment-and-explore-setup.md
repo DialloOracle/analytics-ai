@@ -20,7 +20,7 @@ In this lab, you will:
 - Access the GoldenGate Stream Analytics environment
 - Access the Helidon environment
 
-## Access the GoldenGate Stream Analytics environment
+## Task 1: Access the GoldenGate Stream Analytics environment
 
 1. Once you are in the instance, access the terminal.
 

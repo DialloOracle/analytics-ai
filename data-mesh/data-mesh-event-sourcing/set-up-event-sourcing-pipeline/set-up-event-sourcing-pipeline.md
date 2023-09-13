@@ -11,7 +11,7 @@ The labs will walk the end-user through how to add components of Oracle GoldenGa
 ### About Oracle GoldenGate Microservices
 Oracle GoldenGate offers high-performance, fault-tolerant, easy-to-use, and flexible real- time data streaming platform for big data environments. It easily extends customers’ real-time data integration architectures to big data systems without impacting the performance of the source systems and enables timely business insight for better decision making. This workshop focuses on **GoldenGate Real Time Data Capture** demonstrating four scenarios that you can use (both on-premise and in the cloud) to capture real time data changes from your sources.
 
-## Create Event Log pipeline
+## Task 1: Create Event Log pipeline
 
 For the purpose of this workshop, all data sources, streams, and targets have been preconfigured for your convenience. Your job will be to configure the pipeline and create the transformations that the events will undergo.
 
@@ -37,7 +37,7 @@ For the purpose of this workshop, all data sources, streams, and targets have be
 
     ![](images/pipeline-view.png)
 
-## Create Event Handler pipeline
+## Task 2: Create Event Handler pipeline
 
 1. Select Done to return to the **Catalog**.
 

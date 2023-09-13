@@ -17,7 +17,8 @@ In this lab, you will:
 
 - Examine the createEventLog Pipeline
 
-## Examine the createEventLogPipeline
+## Task 1: Examine the createEventLogPipeline
+Access the GoldenGate Stream Analytics environment
 
 1. In GoldenGate Stream Analytics, select **Catalog** to view the created pipelines.
 
