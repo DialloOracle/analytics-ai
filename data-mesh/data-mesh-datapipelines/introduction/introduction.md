@@ -57,6 +57,6 @@ This lab assumes you have:
 
 ## Acknowledgements
 
-- **Author**- Nicholas Cusato, Santa Monica Specialists Hub, July 14, 2022
+- **Author**- Nicholas Cusato, North American Specialist Hub
 - **Contributers**- Hadi Javaherian, Hannah Nguyen, Gia Villanueva, Akash Dahramshi
-- **Last Updated By/Date** - Nicholas Cusato, Santa Monica Specialists Hub, July 14, 2022
+- **Last Updated By/Date** - Nicholas Cusato, Stephen Stuart, Alpha Diallo, September 2023
