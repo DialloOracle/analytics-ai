@@ -13,19 +13,19 @@
             "filename": "../../what-is-integration/what-is-integration.md"
         },
         {
-            "title": "Lab 1: Stream Data",
+            "title": "Lab 1: Review GoldenGate Microservices",
             "description": "Lab for GGMA",
-            "filename": "../../stream-data/stream-data.md"
+            "filename": "../../review-gg-microservices/review-gg-microservices.md"
         },
         {
-            "title": "Lab 2: Analyze Data Products",
-            "description": "Lab for OAS",
-            "filename": "../../analyze-data-products/analyze-data-products.md"
-        },
-        {
-            "title": "Lab 3: Analyze Streaming Data",
+            "title": "Lab 2: Analyze Streaming Data",
             "description": "Lab for GGSA Truck Stream",
             "filename": "../../analyze-streaming-data/analyze-streaming-data.md"
+        },
+        {
+            "title": "Lab 3: Analyze Data Products",
+            "description": "Lab for OAS",
+            "filename": "../../analyze-data-products/analyze-data-products.md"
         },
         {
         "title": "Need Help?",

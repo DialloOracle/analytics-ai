@@ -2,7 +2,13 @@
 
 ## Introduction
 
-This lab provides detailed instructions of connecting to Oracle Analytics Server (OAS). This compute instance comes with OAS installed and configured with Oracle database, both managed using Unix/Linux *systemd* services to automatically start and shutdown as required. By the end, this exercise will introduce you to the key features of data visualization within Oracle Analytics Server and will help to tell a story on what is happening with our Trucks, a fictional package delivery company in Texas.
+This lab provides detailed instructions of connecting to Oracle Analytics Server (OAS). This compute instance comes with OAS installed and configured with Oracle database, both managed using Unix/Linux *systemd* services to automatically start and shutdown as required. By the end, this exercise will introduce you to the key features of data visualization within Oracle Analytics Server and will help to tell a story on what is happening with our Trucks using a fictional package delivery company in Texas.
+
+In this lab, you will analyze two dashboards, Status and Health, that will demonstrate real time integration as a data product.
+
+Our Trucks is facing issues with supply chain and logistics, due to the harsh weather conditions. Having the ability to do cross pillar data analysis with non-oracle data provides the ability to perform a deeper dive to identify root causes.
+
+In this scenario we will monitor the weathers impact on our trucks through the creation of dashboards and canvases to quickly find insights.
 
 *Estimated Completion Time:* 30 Minutes
 
@@ -11,19 +17,11 @@ This lab provides detailed instructions of connecting to Oracle Analytics Server
 Oracle Analytics Server features powerful, intuitive data visualization capabilities that enable analysts to create self-service data visualizations on an accurate and consistent data set.
 
 ### Objectives
-
 - Validate that the environment has been initialized and is ready
-<if type="external">- Download and stage workshop artifacts (*Only needed if not using the remote desktop*)</if>
-
-In this lab, you will analyze two dashboards, Status and Health, that will demonstrate real time integration as a data product.
-
-Our Trucks is facing issues with supply chain and logistics, due to the harsh weather conditions. Having the ability to do cross pillar data analysis with non-oracle data provides the ability to perform a deeper dive to identify root causes.
-
-In this scenario we will monitor the weathers impact on our trucks through the creation of dashboards and canvases to quickly find insights:
-* **Analyze Package Status:**
+- Analyze Package Status:
     - Net Sales in Northeast region performing lower than other geographies.
     - On Time Delivery performance lagging in Distribution Centers.
-* **Analyze Truck Health:**
+- Analyze Truck Health:
     - **OTD Analysis** – “The Pennsylvania Distribution Center appears to be driving the shortage of fries, hampering sales in the Northeast region.”
     - **Headcount Analysis** – “Long Wait Times is an indicator that there might be turnover that is affecting payroll costs and customer satisfaction.”
 
@@ -42,15 +40,7 @@ This lab assumes you have:
 ## Task 1: Login to Oracle Analytics Server UI
 This lab has been designed to be executed end-to-end with any modern browser on your laptop or workstation. Proceed as detailed below to login.
 
-1. Now with access to your remote desktop session, proceed as indicated below to validate your environment before you start executing the subsequent labs. The following Processes should be up and running:
-
-    - Database Listener
-        - LISTENER
-    - Database Server instance
-        - ORCLCDB
-    - Oracle Analytics Server (OAS)
-
-2. On the *Web Browser* window on the right preloaded with *OAS Web Console*, click on the *Username* field and select the saved credentials to login. These credentials have been saved within *Web Browser* and are provided below for reference
+1. On the *Web Browser* window on the right preloaded with *OAS Web Console*, click on the *Username* field and select the saved credentials to login. These credentials have been saved within *Web Browser* and are provided below for reference
 
     - Username
 
@@ -66,7 +56,7 @@ This lab has been designed to be executed end-to-end with any modern browser on 
 
     ![Login](images/oas-login.png " ")
 
-3. Confirm successful login. Please note that it takes about 5 minutes after instance provisioning for all processes to fully start.
+2. Confirm successful login. Please note that it takes about 5 minutes after instance provisioning for all processes to fully start.
 
     ![Landing](images/oas-landing.png " ")
 
@@ -81,7 +71,7 @@ This lab has been designed to be executed end-to-end with any modern browser on 
     ```
     </if>
 
-4. If you are still unable to login or the login page is not functioning after reloading the application URL, open a terminal session and proceed as indicated below to validate the services.
+3. If you are still unable to login or the login page is not functioning after reloading the application URL, open a terminal session and proceed as indicated below to validate the services.
 
     - Database and Listener
 
@@ -103,7 +93,7 @@ This lab has been designed to be executed end-to-end with any modern browser on 
 
     ![Service](images/oas-service-status.png " ")
 
-5. If you see questionable output(s), failure or down component(s), restart the corresponding service(s) accordingly
+4. If you see questionable output(s), failure or down component(s), restart the corresponding service(s) accordingly
 
     - Database and Listener
 
@@ -130,62 +120,6 @@ In order to run this workshop, you will need a set of files that have been conve
     - [`DM_Real_Time_Integration_Content.zip`](https://objectstorage.us-ashburn-1.oraclecloud.com/p/aLrO2xRW8wG3CP1M0Lj3TTjXPoktlzmBsurAo7qESaJPLK3MkRKA4ch1Hox2NcfC/n/natdsecurity/b/labs-files/o/OAS_Retail_LiveLabs_Content.zip)
 
 2. Uncompress the ZIP archive
-</if>
-
-## Appendix 1: Managing Startup Services
-Your workshop instance is configured to automatically start all processes needed for the labs. Should you need to stop/start these processes, proceed as shown below from your remote desktop session
-
-1. Database Service (Database and Listener).
-
-    - Start
-
-    ```
-    <copy>sudo systemctl start oracle-database</copy>
-    ```
-
-    - Stop
-
-    ```
-    <copy>sudo systemctl stop oracle-database</copy>
-    ```
-
-    - Status
-
-    ```
-    <copy>sudo systemctl status oracle-database</copy>
-    ```
-
-    - Restart
-
-    ```
-    <copy>sudo systemctl restart oracle-database</copy>
-    ```
-
-2. Oracle Analytics Server (OAS)
-
-    - Start
-
-    ```
-    <copy>sudo systemctl start oas</copy>
-    ```
-
-    - Stop
-
-    ```
-    <copy>sudo systemctl stop oas</copy>
-    ```
-
-    - Status
-
-    ```
-    <copy>sudo systemctl status oas</copy>
-    ```
-
-    - Restart
-
-    ```
-    <copy>sudo systemctl restart oas</copy>
-    ```
 
 ## Task 3: Data Wrangling
 1. From the browser session you started in the  Initialize environment lab, **click** on the **Page Menu** icon located in the upper right-hand corner.
@@ -244,7 +178,7 @@ The data visualization capabilities in Oracle Analytics Server are extensive, in
 
     ![Health](./images/health.png " ")
 
-## Task 4: Truck Analysis
+## Task 5: Truck Analysis
 This next section we will inspect the health of our ten trucks and see how the weather might have impacted the trucks instruments.
 
 1. Notice the wheel at the top left of the dashboard that breaks down the health of our ten different trucks. As you can see the healthy trucks are in green and the ones that may need to be inspected are red or turning close to that color.
@@ -265,12 +199,68 @@ This next section we will inspect the health of our ten trucks and see how the w
 
 6. In summary, we were able to visualize our truck streaming data coming into **Oracle Analytics** in real time by utilizing its governed and self-service capabilities to build out dashboards to analyze logistics and supply chain management. With these visual insights at the end of our pipeline, a trucking company can now proceed to see relevant issues they are facing to be more efficient with their operations thanks to the help of Oracle’s Data Integration in Data Mesh.
 
+## Appendix 1: Managing Startup Services
+Your workshop instance is configured to automatically start all processes needed for the labs. Should you need to stop/start these processes, proceed as shown below from your remote desktop session
+
+1. Database Service (Database and Listener).
+
+    - Start
+
+    ```
+    <copy>sudo systemctl start oracle-database</copy>
+    ```
+
+    - Stop
+
+    ```
+    <copy>sudo systemctl stop oracle-database</copy>
+    ```
+
+    - Status
+
+    ```
+    <copy>sudo systemctl status oracle-database</copy>
+    ```
+
+    - Restart
+
+    ```
+    <copy>sudo systemctl restart oracle-database</copy>
+    ```
+
+2. Oracle Analytics Server (OAS)
+
+    - Start
+
+    ```
+    <copy>sudo systemctl start oas</copy>
+    ```
+
+    - Stop
+
+    ```
+    <copy>sudo systemctl stop oas</copy>
+    ```
+
+    - Status
+
+    ```
+    <copy>sudo systemctl status oas</copy>
+    ```
+
+    - Restart
+
+    ```
+    <copy>sudo systemctl restart oas</copy>
+    ```
+
 ## Learn More
 * [Oracle Analytics Server Documentation](https://docs.oracle.com/en/middleware/bi/analytics-server/index.html)
 * [https://www.oracle.com/business-analytics/analytics-server.html](https://www.oracle.com/business-analytics/analytics-server.html)
 * [https://www.oracle.com/business-analytics](https://www.oracle.com/business-analytics)
 
 ## Acknowledgements
-* **Authors** - Luke Wheless, Andrew Selius, Solution Engineer, NA Cloud and Technology
-* **Contributors** - Luke Wheless, Solution Solution Engineer, NA Cloud and Technology
-* **Last Updated By/Date** - Luke Wheless, June 2022
+
+- **Author**- Brian Elliott, Chicago Specialists Hub, September 2023
+- **Contributers**- Alpha Diallo
+- **Last Updated By/Date** - Alpha Diallo, Brian Elliott Chicago Specialists Hub, September 2023

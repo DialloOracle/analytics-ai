@@ -115,6 +115,6 @@ If you selected the **Green Button** for this workshop and still have an active 
 
 ## Acknowledgements
 
-* **Author** - Hadi Javaherian, Solution Engineer
-* **Contributors** - Shrinidhi Kulkarni, Meghana Banka, Rene Fontcha
-* **Last Updated By/Date** - Rene Fontcha, LiveLabs Platform Lead, NA Technology, February 2021
+- **Author**- Brian Elliott, Chicago Specialists Hub, September 2023
+- **Contributers**- Alpha Diallo
+- **Last Updated By/Date** - Alpha Diallo, Brian Elliott Chicago Specialists Hub, September 2023
