@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # What is Appliciation Modernization?
+=======
+# What is applciation modernization?
+>>>>>>> upstream/main
 
 ## Application Modernization
 

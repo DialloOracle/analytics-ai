@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "workshoptitle": "Data Mesh - App Modernization",
     "help": "livelabs-help-analytics_us@oracle.com",
     "tutorials": [
@@ -6,10 +7,20 @@
             "title": "introduction",
             "description": "Description of Data Mesh",
             "filename": "../../introduction/introduction.md"
+=======
+    "workshoptitle": "Data Mesh - Event Sourcing",
+    "help": "livelabs-help-analytics_us@oracle.com",
+    "tutorials": [
+        {
+            "title": "What is data mesh?",
+            "description": "Description of Data Mesh.",
+            "filename": "./../../what-is-data-mesh/what-is-data-mesh.md"
+>>>>>>> upstream/main
         },
         {
             "title": "What is app modernization?",
             "description": "Explore app modernization.",
+<<<<<<< HEAD
             "filename": "../../what-is-app-modernization/what-is-app-modernization.md"
         },
         {
@@ -29,4 +40,24 @@
     ],
     "task_type": "Sections",
     "hide_button": "true"
+=======
+            "filename": "./../../what-is-app-modernization/what-is-app-modernization.md"
+          },
+        {
+            "title": "Access environment and explore setup",
+            "description": "Access environment and explore setup.",
+            "filename": "./../../access-environment-and-explore-setup/access-environment-and-explore-setup.md"
+        },
+            {
+                "title": "Run data mesh pipeline",
+                "description": "Run data mesh pipeline.",
+                "filename": "./../../run-data-mesh-pipeline/run-data-mesh-pipeline.md"
+            },
+            {
+            "title": "Need Help?",
+            "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+            "filename":"https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/need-help/need-help-livelabs.md"
+           }
+    ]
+>>>>>>> upstream/main
 }
